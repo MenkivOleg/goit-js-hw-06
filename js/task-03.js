@@ -13,4 +13,13 @@ const images = [
   },
 ];
 
-const list = document.querySelector('gallery')
+const gallery  = document.querySelector('.gallery')
+
+const imagesList = images
+  .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}" width ="380" height = "auto"></li>`)
+.join("")
+gallery.insertAdjacentHTML('beforeend', imagesList);
+gallery.classList.add('no-dot');
+
+
+

@@ -14,7 +14,6 @@ ingredients.forEach((ingredients) => {
   ul.append(li);
 });
 // console.dir(`List ingredients: ${ ingredients }`)
-
 // const li = document.createElement('li');
 // li.classList.add('item')
 // li.textContent = ingredients;
